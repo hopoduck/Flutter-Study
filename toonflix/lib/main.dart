@@ -2,24 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:toonflix/widgets/button.dart';
 import 'package:toonflix/widgets/currency_card.dart';
 
-class Player {
-  String name;
-
-  Player({required this.name});
-}
-
 class CustomColor {
   static const Color orange = Color(0xfff2b33a);
   static const Color black = Color(0xff1f2123);
 }
 
 void main() {
-  var me = Player(name: 'me');
-
-  runApp(App());
+  runApp(const App());
 }
 
 class App extends StatelessWidget {
+  const App({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
